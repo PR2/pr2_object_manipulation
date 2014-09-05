@@ -1,0 +1,69 @@
+<package>
+  <name>pr2_interactive_manipulation_frontend</name>
+  <version>1.0.0</version>
+  <description>pr2_interactive_manipulation_frontend</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_interactive_manipulation_frontend</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Jonathan Binney</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rviz</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>pr2_interactive_object_detection_frontend</build_depend>
+  <build_depend>object_recognition_gui</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+  <build_depend>pr2_object_manipulation_msgs</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>pr2_msgs</build_depend>
+  <build_depend>pr2_object_manipulation_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rviz</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>pr2_interactive_object_detection_frontend</run_depend>
+  <run_depend>object_recognition_gui</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+  <run_depend>pr2_object_manipulation_msgs</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>pr2_msgs</run_depend>
+  <run_depend>pr2_object_manipulation_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rviz</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>pr2_interactive_object_detection_frontend</test_depend> -->
+  <!-- <test_depend>object_recognition_gui</test_depend> -->
+  <!-- <test_depend>tf_throttle</test_depend> -->
+  <!-- <test_depend>view_controller_msgs</test_depend> -->
+  <!-- <test_depend>pr2_controllers_msgs</test_depend> -->
+  <!-- <test_depend>pr2_object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>std_msgs</test_depend> -->
+  <!-- <test_depend>std_srvs</test_depend> -->
+  <!-- <test_depend>pr2_msgs</test_depend> -->
+  <!-- <test_depend>pr2_object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pcl</test_depend> -->
+
+<export>
+    <rviz plugin="${prefix}/plugin_description.xml"/>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib" cflags="-I${prefix}/include -I${prefix}/ui"/>
+</export>
+
+</package>
