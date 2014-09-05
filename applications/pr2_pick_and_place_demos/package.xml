@@ -1,0 +1,66 @@
+<package>
+  <name>pr2_pick_and_place_demos</name>
+  <version>1.0.0</version>
+  <description>Example applications that call the services provided by the
+    manipulation pipeline.</description>
+ <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_pick_and_place_demos</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie and Kaijen Hsiao</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>tabletop_object_detector</build_depend>
+  <build_depend>tabletop_collision_map_processing</build_depend>
+  <build_depend>household_objects_database</build_depend>
+  <build_depend>pr2_gripper_reactive_approach</build_depend>
+  <build_depend>pr2_manipulation_controllers</build_depend>
+  <build_depend>pr2_tabletop_manipulation_launch</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>actionlib_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf_conversions</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>tabletop_object_detector</run_depend>
+  <run_depend>tabletop_collision_map_processing</run_depend>
+  <run_depend>household_objects_database</run_depend>
+  <run_depend>pr2_gripper_reactive_approach</run_depend>
+  <run_depend>pr2_manipulation_controllers</run_depend>
+  <run_depend>pr2_tabletop_manipulation_launch</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>actionlib</test_depend> -->
+  <!-- <test_depend>actionlib_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>tf_conversions</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>tabletop_object_detector</test_depend> -->
+  <!-- <test_depend>tabletop_collision_map_processing</test_depend> -->
+  <!-- <test_depend>household_objects_database</test_depend> -->
+  <!-- <test_depend>pr2_gripper_reactive_approach</test_depend> -->
+  <!-- <test_depend>pr2_manipulation_controllers</test_depend> -->
+  <!-- <test_depend>pr2_tabletop_manipulation_launch</test_depend> -->
+  <!-- <test_depend>pr2_controllers_msgs</test_depend> -->
+
+</package>

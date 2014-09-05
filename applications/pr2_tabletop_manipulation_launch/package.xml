@@ -1,0 +1,35 @@
+<package>
+  <name>pr2_tabletop_manipulation_launch</name>
+  <version>1.0.0</version>
+  <description>Launch files for starting the manipulation pipeline, complete with
+    sensor processing for manipulation, on the PR2 robot.</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_tabletop_manipulation_launch</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>pr2_object_manipulation_launch</build_depend>
+  <build_depend>household_objects_database</build_depend>
+  <build_depend>tabletop_object_detector</build_depend>
+  <build_depend>tabletop_collision_map_processing</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>pr2_object_manipulation_launch</run_depend>
+  <run_depend>household_objects_database</run_depend>
+  <run_depend>tabletop_object_detector</run_depend>
+  <run_depend>tabletop_collision_map_processing</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>pr2_object_manipulation_launch</test_depend> -->
+  <!-- <test_depend>household_objects_database</test_depend> -->
+  <!-- <test_depend>tabletop_object_detector</test_depend> -->
+  <!-- <test_depend>tabletop_collision_map_processing</test_depend> -->
+
+</package>

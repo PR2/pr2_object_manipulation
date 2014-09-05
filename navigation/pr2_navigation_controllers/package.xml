@@ -1,0 +1,52 @@
+<package>
+  <name>pr2_navigation_controllers</name>
+  <version>1.0.0</version>
+  <description>pr2_navigation_controllers: Some base controllers pulled in from navigation_experimental so that we can use them for manipulation.</description>
+  <maintainer email="googleit@lmgtfy.com">Ported by Adam Leeper</maintainer>
+  <maintainer email="googleit@lmgtfy.com">originally by Eitan Marder-Eppstein</maintainer>
+  <maintainer email="dash@clearpathrobotics.com">Catkinized by Devon Ash</maintainer> 
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_navigation_controllers</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Ported by Adam Leeper</author>
+  <author>originally by Eitan Marder-Eppstein</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>base_local_planner</build_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>nav_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>nav_core</run_depend>
+  <run_depend>base_local_planner</run_depend>
+  <run_depend>costmap_2d</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>nav_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>pluginlib</test_depend> -->
+  <!-- <test_depend>nav_core</test_depend> -->
+  <!-- <test_depend>base_local_planner</test_depend> -->
+  <!-- <test_depend>costmap_2d</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>nav_msgs</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lgoal_passer -lpose_follower" cflags="-I${prefix}/include -I${prefix}/msg/cpp"/>
+    <nav_core plugin="${prefix}/planner_plugins.xml"/>
+</export>
+
+</package>

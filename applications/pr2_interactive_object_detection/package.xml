@@ -1,0 +1,62 @@
+<package>
+  <name>pr2_interactive_object_detection</name>
+  <version>1.0.0</version>
+  <description>Backend for the interactive object recognition rviz plugin.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_interactive_object_detection</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>David Gossow</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tabletop_object_detector</build_depend>
+  <build_depend>household_objects_database</build_depend>
+  <build_depend>household_objects_database_msgs</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>stereo_msgs</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>rgbd_assembler</build_depend>
+  <build_depend>tabletop_collision_map_processing</build_depend>
+  <build_depend>interactive_perception_msgs</build_depend>
+  <build_depend>object_recognition_core</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>tabletop_object_detector</run_depend>
+  <run_depend>household_objects_database</run_depend>
+  <run_depend>household_objects_database_msgs</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>stereo_msgs</run_depend>
+  <run_depend>actionlib_msgs</run_depend>
+  <run_depend>rgbd_assembler</run_depend>
+  <run_depend>tabletop_collision_map_processing</run_depend>
+  <run_depend>interactive_perception_msgs</run_depend>
+  <run_depend>object_recognition_core</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>tabletop_object_detector</test_depend> -->
+  <!-- <test_depend>household_objects_database</test_depend> -->
+  <!-- <test_depend>household_objects_database_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>stereo_msgs</test_depend> -->
+  <!-- <test_depend>actionlib_msgs</test_depend> -->
+  <!-- <test_depend>rgbd_assembler</test_depend> -->
+  <!-- <test_depend>tabletop_collision_map_processing</test_depend> -->
+  <!-- <test_depend>interactive_perception_msgs</test_depend> -->
+  <!-- <test_depend>object_recognition_core</test_depend> -->
+
+</package>

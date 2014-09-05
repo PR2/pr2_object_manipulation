@@ -1,0 +1,54 @@
+<package>
+  <name>robot_self_filter_color</name>
+  <version>1.0.0</version>
+  <description>The robot self filter is a package that allows you to filter out robot body parts from sensor information using the known positions and orientations of these parts.  (same as robot_self_filter in arm_navigation, but with PointXYZRGB.)</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/robot_self_filter_color</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Ioan Sucan</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>filters</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>geometric_shapes</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>resource_retriever</build_depend>
+  <build_depend>shape_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>filters</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>geometric_shapes</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>resource_retriever</run_depend>
+  <run_depend>shape_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>filters</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>visualization_msgs</test_depend> -->
+  <!-- <test_depend>geometric_shapes</test_depend> -->
+  <!-- <test_depend>urdf</test_depend> -->
+  <!-- <test_depend>resource_retriever</test_depend> -->
+  <!-- <test_depend>shape_msgs</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lrobot_self_filter_color" cflags="-I${prefix}/include `rosboost-cfg --cflags`"/>
+</export>
+
+</package>
