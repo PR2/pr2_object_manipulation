@@ -1,0 +1,40 @@
+<package>
+  <name>segmented_clutter_grasp_planner</name>
+  <version>1.0.0</version>
+  <description>segmented_clutter_grasp_planner: segments clutter into clusters by removing points whose normals are parallel to a given grasp direction, and then running the point cluster grasp planner on the resulting clusters</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/segmented_clutter_grasp_planner</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Kaijen Hsiao</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>pr2_gripper_grasp_planner_cluster</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>pr2_gripper_grasp_planner_cluster</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>pr2_gripper_grasp_planner_cluster</test_depend> -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+
+</package>

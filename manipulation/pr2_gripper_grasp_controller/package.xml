@@ -1,0 +1,41 @@
+<package>
+  <name>pr2_gripper_grasp_controller</name>
+  <version>1.0.0</version>
+  <description>Implementation of the hand posture grasp controller for the PR2
+    gripper.</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_gripper_grasp_controller</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>actionlib</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>pr2_controller_manager</build_depend>
+  <build_depend>pr2_gripper_sensor_action</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>actionlib</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>pr2_controller_manager</run_depend>
+  <run_depend>pr2_gripper_sensor_action</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>actionlib</test_depend> -->
+  <!-- <test_depend>pr2_controllers_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>pr2_controller_manager</test_depend> -->
+  <!-- <test_depend>pr2_gripper_sensor_action</test_depend> -->
+
+</package>

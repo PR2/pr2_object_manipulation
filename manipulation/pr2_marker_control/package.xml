@@ -1,0 +1,70 @@
+<package>
+  <name>pr2_marker_control</name>
+  <version>1.0.0</version>
+  <description>A PR2 application that uses Interactive Markers to provide
+    a point-and-click inteface for controlling the PR2 in Rviz.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_marker_control</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Adam Leeper</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>interactive_markers</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>point_cloud_server</build_depend>
+  <build_depend>pr2_object_manipulation_msgs</build_depend>
+  <build_depend>pr2_navigation_controllers</build_depend>
+  <build_depend>pr2_interactive_gripper_pose_action</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>planning_environment</build_depend>
+  <build_depend>pr2_wrappers</build_depend>
+  <build_depend>interactive_marker_helpers</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>interactive_markers</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>point_cloud_server</run_depend>
+  <run_depend>pr2_object_manipulation_msgs</run_depend>
+  <run_depend>pr2_navigation_controllers</run_depend>
+  <run_depend>pr2_interactive_gripper_pose_action</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>planning_environment</run_depend>
+  <run_depend>pr2_wrappers</run_depend>
+  <run_depend>interactive_marker_helpers</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>interactive_markers</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>visualization_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>point_cloud_server</test_depend> -->
+  <!-- <test_depend>pr2_object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_navigation_controllers</test_depend> -->
+  <!-- <test_depend>pr2_interactive_gripper_pose_action</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>planning_environment</test_depend> -->
+  <!-- <test_depend>pr2_wrappers</test_depend> -->
+  <!-- <test_depend>interactive_marker_helpers</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lpr2_marker_control_lib" cflags="-I${prefix}/include"/>
+</export>
+
+</package>

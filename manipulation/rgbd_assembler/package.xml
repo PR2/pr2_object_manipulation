@@ -1,0 +1,53 @@
+<package>
+  <name>rgbd_assembler</name>
+  <version>1.0.0</version>
+  <description>Upon a request, this service collects the necessary 
+    sensory data to transfer the colour information from 
+    the wide field to the narrow field camera image. 
+
+    Since the narrow field cameras of the PR2 are monochrome,
+    this can be useful for any algorithm that does, e.g., 
+    segmentation or recognition based partially on colour information.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/rgbd_assembler</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Jeannette Bohg</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>stereo_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rviz_interaction_tools</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>image_transport</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>stereo_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rviz_interaction_tools</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>image_transport</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>stereo_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>rviz_interaction_tools</test_depend> -->
+  <!-- <test_depend>pcl_ros</test_depend> -->
+  <!-- <test_depend>image_transport</test_depend> -->
+
+</package>

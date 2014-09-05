@@ -1,0 +1,115 @@
+<package>
+  <name>pr2_interactive_manipulation</name>
+  <version>1.0.0</version>
+  <description>A package that allows a remote user to request and assist with
+     grasping and manipulation tasks, primarily using an rviz display.</description>
+ <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_interactive_manipulation</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie</author>
+  <author>Kaijen Hsiao</author>
+  <author>Adam Leeper</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>tf</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>pr2_wrappers</build_depend>
+  <build_depend>robot_self_filter_color</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>joy</build_depend>
+  <build_depend>joint_trajectory_generator</build_depend>
+  <build_depend>map_server</build_depend>
+  <build_depend>image_rotate</build_depend>
+  <build_depend>point_cloud_server</build_depend>
+  <build_depend>pr2_2dnav_local</build_depend>
+  <build_depend>pr2_teleop</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <build_depend>pr2_2dnav_slam</build_depend>
+  <build_depend>pr2_tuck_arms_action</build_depend>
+  <build_depend>pr2_marker_control</build_depend>
+  <build_depend>pr2_object_manipulation_msgs</build_depend>
+  <build_depend>pr2_interactive_gripper_pose_action</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>pr2_object_manipulation_launch</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>pr2_plugs_actions</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>tf</run_depend>
+  <run_depend>tabletop_collision_map_processing</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>pr2_create_object_model</run_depend>
+  <run_depend>pr2_wrappers</run_depend>
+  <run_depend>robot_self_filter_color</run_depend>
+  <run_depend>move_base_msgs</run_depend>
+  <run_depend>segmented_clutter_grasp_planner</run_depend>
+  <run_depend>tf_throttle</run_depend>
+  <run_depend>pr2_interactive_object_detection</run_depend>
+  <run_depend>joy</run_depend>
+  <run_depend>pr2_2dnav</run_depend>
+  <run_depend>joint_trajectory_generator</run_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>image_rotate</run_depend>
+  <run_depend>point_cloud_server</run_depend>
+  <run_depend>pr2_2dnav_local</run_depend>
+  <run_depend>pr2_teleop</run_depend>
+  <run_depend>topic_tools</run_depend>
+  <run_depend>pr2_2dnav_slam</run_depend>
+  <run_depend>pr2_tuck_arms_action</run_depend>
+  <run_depend>pr2_marker_control</run_depend>
+  <run_depend>pr2_object_manipulation_msgs</run_depend>
+  <run_depend>pr2_interactive_gripper_pose_action</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>pr2_object_manipulation_launch</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>pr2_plugs_actions</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>tabletop_collision_map_processing</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_controllers_msgs</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>std_msgs</test_depend> -->
+  <!-- <test_depend>std_srvs</test_depend> -->
+  <!-- <test_depend>pr2_create_object_model</test_depend> -->
+  <!-- <test_depend>pr2_wrappers</test_depend> -->
+  <!-- <test_depend>robot_self_filter_color</test_depend> -->
+  <!-- <test_depend>move_base_msgs</test_depend> -->
+  <!-- <test_depend>segmented_clutter_grasp_planner</test_depend> -->
+  <!-- <test_depend>tf_throttle</test_depend> -->
+  <!-- <test_depend>pr2_interactive_object_detection</test_depend> -->
+  <!-- <test_depend>joy</test_depend> -->
+  <!-- <test_depend>pr2_2dnav</test_depend> -->
+  <!-- <test_depend>joint_trajectory_generator</test_depend> -->
+  <!-- <test_depend>map_server</test_depend> -->
+  <!-- <test_depend>image_rotate</test_depend> -->
+  <!-- <test_depend>point_cloud_server</test_depend> -->
+  <!-- <test_depend>pr2_2dnav_local</test_depend> -->
+  <!-- <test_depend>pr2_teleop</test_depend> -->
+  <!-- <test_depend>topic_tools</test_depend> -->
+  <!-- <test_depend>pr2_2dnav_slam</test_depend> -->
+  <!-- <test_depend>pr2_tuck_arms_action</test_depend> -->
+  <!-- <test_depend>pr2_marker_control</test_depend> -->
+  <!-- <test_depend>pr2_object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_interactive_gripper_pose_action</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>pr2_object_manipulation_launch</test_depend> -->
+  <!-- <test_depend>dynamic_reconfigure</test_depend> -->
+  <!-- <test_depend>pr2_plugs_actions</test_depend> -->
+
+</package>

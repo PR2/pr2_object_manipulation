@@ -1,0 +1,54 @@
+<package>
+  <name>tabletop_object_detector</name>
+  <version>1.0.0</version>
+  <description>Performs object segmentation and simple object recognition for
+    constrained scenes.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/object_detector</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Marius Muja and Matei Ciocarlie</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>shape_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>household_objects_database_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>shape_msgs</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>household_objects_database_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>visualization_msgs</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>shape_msgs</test_depend> -->
+  <!-- <test_depend>pcl</test_depend> -->
+  <!-- <test_depend>pcl_ros</test_depend> -->
+  <!-- <test_depend>distance_field</test_depend> -->
+  <!-- <test_depend>household_objects_database_msgs</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -ltabletop_model_fitter -lmarker_generator" cflags="-I${prefix}/include -I${prefix}/msg_gen/cpp -I${prefix}/srv_gen/cpp"/>
+</export>
+
+</package>

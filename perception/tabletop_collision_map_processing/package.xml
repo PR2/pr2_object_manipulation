@@ -1,0 +1,61 @@
+<package>
+  <name>tabletop_collision_map_processing</name>
+  <version>1.0.0</version>
+  <description>Populates and manages a collision environment using the results of
+    sensor processing from the tabletop_object_detector. Functionality
+    includes adding and removing detected objects from the collision
+    environment, and requesting static collision maps for obstacle
+    avoidance.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/tabletop_collision_map_processing</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>shape_msgs</build_depend>
+  <build_depend>arm_navigation_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>pr2_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>household_objects_database_msgs</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>tabletop_object_detector</build_depend>
+  <build_depend>object_manipulator</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>shape_msgs</run_depend>
+  <run_depend>arm_navigation_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>pr2_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>household_objects_database_msgs</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>tabletop_object_detector</run_depend>
+  <run_depend>object_manipulator</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>shape_msgs</test_depend> -->
+  <!-- <test_depend>arm_navigation_msgs</test_depend> -->
+  <!-- <test_depend>std_srvs</test_depend> -->
+  <!-- <test_depend>pr2_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>actionlib</test_depend> -->
+  <!-- <test_depend>household_objects_database_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>tabletop_object_detector</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -ltabletop_collision_map_processing" cflags="-I${prefix}/include"/>
+</export>
+
+</package>

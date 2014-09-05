@@ -1,0 +1,85 @@
+<package>
+  <name>pr2_gripper_reactive_approach</name>
+  <version>1.0.0</version>
+  <description>Executes a grasp with the PR2 gripper, starting from the
+     pre-grasp stage and using the tactile sensors to correct for
+     unexpected contacts encountered along the way.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_gripper_reactive_approach</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Kaijen Hsiao</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rospy</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>arm_navigation_msgs</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+  <build_depend>pr2_mechanism_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>interpolated_ik_motion_planner</build_depend>
+  <build_depend>tabletop_collision_map_processing</build_depend>
+  <build_depend>trajectory_msgs</build_depend>
+  <build_depend>pr2_gripper_action</build_depend>
+  <build_depend>pr2_mechanism_controllers</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>pr2_manipulation_controllers</build_depend>
+  <build_depend>joint_trajectory_action</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>pr2_gripper_sensor_action</build_depend>
+  <build_depend>pr2_gripper_sensor_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rospy</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>arm_navigation_msgs</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+  <run_depend>pr2_mechanism_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>interpolated_ik_motion_planner</run_depend>
+  <run_depend>tabletop_collision_map_processing</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>pr2_gripper_action</run_depend>
+  <run_depend>pr2_mechanism_controllers</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>pr2_manipulation_controllers</run_depend>
+  <run_depend>joint_trajectory_action</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>pr2_gripper_sensor_action</run_depend>
+  <run_depend>pr2_gripper_sensor_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>actionlib</test_depend> -->
+  <!-- <test_depend>std_srvs</test_depend> -->
+  <!-- <test_depend>arm_navigation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_controllers_msgs</test_depend> -->
+  <!-- <test_depend>pr2_mechanism_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>interpolated_ik_motion_planner</test_depend> -->
+  <!-- <test_depend>tabletop_collision_map_processing</test_depend> -->
+  <!-- <test_depend>trajectory_msgs</test_depend> -->
+  <!-- <test_depend>pr2_gripper_action</test_depend> -->
+  <!-- <test_depend>pr2_mechanism_controllers</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>pr2_manipulation_controllers</test_depend> -->
+  <!-- <test_depend>joint_trajectory_action</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_gripper_sensor_action</test_depend> -->
+  <!-- <test_depend>pr2_gripper_sensor_msgs</test_depend> -->
+
+</package>

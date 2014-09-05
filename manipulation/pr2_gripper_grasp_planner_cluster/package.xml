@@ -1,0 +1,55 @@
+<package>
+  <name>pr2_gripper_grasp_planner_cluster</name>
+  <version>1.0.0</version>
+  <description>Plans grasps for unknown objects using the PR2 gripper. Uses only
+    a (segmented) point cloud of the target object, often originating
+    from a single view or scan.</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_gripper_grasp_planner_cluster</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Kaijen Hsiao</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rospy</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>interpolated_ik_motion_planner</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>pr2_machine</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rospy</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>interpolated_ik_motion_planner</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>pr2_machine</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>actionlib</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>visualization_msgs</test_depend> -->
+  <!-- <test_depend>interpolated_ik_motion_planner</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_machine</test_depend> -->
+
+<export>
+    <cpp cflags="-I${prefix}/srv/cpp"/>
+</export>
+
+</package>

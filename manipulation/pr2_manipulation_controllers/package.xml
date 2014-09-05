@@ -1,0 +1,110 @@
+<package>
+  <name>pr2_manipulation_controllers</name>
+  <version>1.0.0</version>
+  <description>pr2_manipulation_controllers</description>
+<maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_manipulation_controllers</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Kaijen Hsiao</author>
+  <author>Stu Glaser</author>
+  <author>Adam Leeper</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>pluginlib</build_depend>
+  <build_depend>kdl</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>robot_mechanism_controllers</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rosrt</build_depend>
+  <build_depend>angles</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>object_manipulation_msgs</build_depend>
+  <build_depend>pr2_controller_interface</build_depend>
+  <build_depend>pr2_controller_manager</build_depend>
+  <build_depend>kdl_parser</build_depend>
+  <build_depend>pr2_mechanism_model</build_depend>
+  <build_depend>control_toolbox</build_depend>
+  <build_depend>realtime_tools</build_depend>
+  <build_depend>eigen_conversions</build_depend>
+  <build_depend>rosatomic</build_depend>
+  <build_depend>allocators</build_depend>
+  <build_depend>lockfree</build_depend>
+  <build_depend>pr2_wrappers</build_depend>
+  <build_depend>pr2_mechanism_controllers</build_depend>
+  <build_depend>common_rosdeps</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>pluginlib</run_depend>
+  <run_depend>kdl</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>robot_mechanism_controllers</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rosrt</run_depend>
+  <run_depend>angles</run_depend>
+  <run_depend>tf_conversions</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>object_manipulation_msgs</run_depend>
+  <run_depend>pr2_controller_interface</run_depend>
+  <run_depend>pr2_controller_manager</run_depend>
+  <run_depend>kdl_parser</run_depend>
+  <run_depend>pr2_mechanism_model</run_depend>
+  <run_depend>control_toolbox</run_depend>
+  <run_depend>realtime_tools</run_depend>
+  <run_depend>eigen_conversions</run_depend>
+  <run_depend>rosatomic</run_depend>
+  <run_depend>allocators</run_depend>
+  <run_depend>lockfree</run_depend>
+  <run_depend>pr2_wrappers</run_depend>
+  <run_depend>pr2_mechanism_controllers</run_depend>
+  <run_depend>common_rosdeps</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>pluginlib</test_depend> -->
+  <!-- <test_depend>kdl</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>robot_mechanism_controllers</test_depend> -->
+  <!-- <test_depend>std_srvs</test_depend> -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>rosrt</test_depend> -->
+  <!-- <test_depend>angles</test_depend> -->
+  <!-- <test_depend>tf_conversions</test_depend> -->
+  <!-- <test_depend>std_msgs</test_depend> -->
+  <!-- <test_depend>diagnostic_msgs</test_depend> -->
+  <!-- <test_depend>object_manipulation_msgs</test_depend> -->
+  <!-- <test_depend>pr2_controller_interface</test_depend> -->
+  <!-- <test_depend>pr2_controller_manager</test_depend> -->
+  <!-- <test_depend>kdl_parser</test_depend> -->
+  <!-- <test_depend>pr2_mechanism_model</test_depend> -->
+  <!-- <test_depend>control_toolbox</test_depend> -->
+  <!-- <test_depend>realtime_tools</test_depend> -->
+  <!-- <test_depend>eigen_conversions</test_depend> -->
+  <!-- <test_depend>rosatomic</test_depend> -->
+  <!-- <test_depend>allocators</test_depend> -->
+  <!-- <test_depend>lockfree</test_depend> -->
+  <!-- <test_depend>pr2_wrappers</test_depend> -->
+  <!-- <test_depend>pr2_mechanism_controllers</test_depend> -->
+  <!-- <test_depend>common_rosdeps</test_depend> -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib/ -L${prefix}/lib -lpr2_manipulation_controllers" cflags="`pkg-config --cflags eigen3` -I${prefix}/include -I${prefix}/srv/cpp -I${prefix}/msg/cpp"/>
+    <pr2_controller_interface plugin="${prefix}/controller_plugins.xml"/>
+</export>
+
+</package>

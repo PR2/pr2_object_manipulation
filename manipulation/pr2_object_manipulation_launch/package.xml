@@ -1,0 +1,86 @@
+<package>
+  <name>pr2_object_manipulation_launch</name>
+  <version>1.0.0</version>
+  <description>Contains launch and configuration files for starting the
+    manipulation pipeline, along with all needed controllers,
+    planners, etc., on the PR2 robot.</description>
+  <maintainer email="dash@clearpathrobotics.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pr2_object_manipulation_launch</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Matei Ciocarlie</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>pr2_arm_navigation_actions</build_depend>
+  <build_depend>pr2_arm_navigation_filtering</build_depend>
+  <build_depend>pr2_arm_navigation_kinematics</build_depend>
+  <build_depend>pr2_arm_navigation_config</build_depend>
+  <build_depend>interpolated_ik_motion_planner</build_depend>
+  <build_depend>trajectory_filter_server</build_depend>
+  <build_depend>pr2_manipulation_controllers</build_depend>
+  <build_depend>pr2_controller_manager</build_depend>
+  <build_depend>pr2_gripper_reactive_approach</build_depend>
+  <build_depend>pr2_machine</build_depend>
+  <build_depend>robot_self_filter</build_depend>
+  <build_depend>robot_self_filter_color</build_depend>
+  <build_depend>collider</build_depend>
+  <build_depend>pr2_mechanism_controllers</build_depend>
+  <build_depend>laser_filters</build_depend>
+  <build_depend>openni_launch</build_depend>
+  <build_depend>planning_environment</build_depend>
+  <build_depend>object_manipulator</build_depend>
+  <build_depend>pr2_gripper_grasp_planner_cluster</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>pr2_arm_navigation_planning</run_depend>
+  <run_depend>pr2_arm_navigation_actions</run_depend>
+  <run_depend>pr2_arm_navigation_filtering</run_depend>
+  <run_depend>pr2_arm_navigation_kinematics</run_depend>
+  <run_depend>pr2_arm_navigation_config</run_depend>
+  <run_depend>pr2_manipulation_controllers</run_depend>
+  <run_depend>pr2_controller_manager</run_depend>
+  <run_depend>pr2_machine</run_depend>
+  <run_depend>robot_self_filter_color</run_depend>
+  <run_depend>collider</run_depend>
+  <run_depend>pr2_mechanism_controllers</run_depend>
+  <run_depend>laser_filters</run_depend>
+  <run_depend>openni_launch</run_depend>
+  <run_depend>object_manipulator</run_depend>
+  <run_depend>pr2_gripper_grasp_planner_cluster</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>dynamic_reconfigure</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_perception</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_planning</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_actions</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_filtering</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_kinematics</test_depend> -->
+  <!-- <test_depend>pr2_arm_navigation_config</test_depend> -->
+  <!-- <test_depend>interpolated_ik_motion_planner</test_depend> -->
+  <!-- <test_depend>trajectory_filter_server</test_depend> -->
+  <!-- <test_depend>pr2_manipulation_controllers</test_depend> -->
+  <!-- <test_depend>pr2_controller_manager</test_depend> -->
+  <!-- <test_depend>pr2_gripper_reactive_approach</test_depend> -->
+  <!-- <test_depend>pr2_machine</test_depend> -->
+  <!-- <test_depend>robot_self_filter</test_depend> -->
+  <!-- <test_depend>robot_self_filter_color</test_depend> -->
+  <!-- <test_depend>collider</test_depend> -->
+  <!-- <test_depend>pr2_mechanism_controllers</test_depend> -->
+  <!-- <test_depend>laser_filters</test_depend> -->
+  <!-- <test_depend>openni_launch</test_depend> -->
+  <!-- <test_depend>planning_environment</test_depend> -->
+  <!-- <test_depend>move_arm_head_monitor</test_depend> -->
+  <!-- <test_depend>mongodb</test_depend> -->
+  <!-- <test_depend>object_manipulator</test_depend> -->
+  <!-- <test_depend>pr2_gripper_grasp_controller</test_depend> -->
+  <!-- <test_depend>pr2_gripper_grasp_planner_cluster</test_depend> -->
+
+</package>
