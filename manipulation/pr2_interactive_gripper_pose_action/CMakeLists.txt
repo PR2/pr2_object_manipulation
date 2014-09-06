@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(pr2_interactive_gripper_pose_action)
 # Load catkin and all dependencies required for this package
 # TODO: remove all from COMPONENTS that are not catkin packages.
-find_package(catkin REQUIRED COMPONENTS  pr2_object_manipulation_msgs roscpp sensor_msgs visualization_msgs geometry_msgs tf )
+find_package(catkin REQUIRED COMPONENTS  pr2_object_manipulation_msgs roscpp sensor_msgs visualization_msgs geometry_msgs tf object_manipulator)
 
 # include_directories(include ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
 # CATKIN_MIGRATION: removed during catkin migration
@@ -12,6 +12,9 @@ find_package(catkin REQUIRED COMPONENTS  pr2_object_manipulation_msgs roscpp sen
 
 # CATKIN_MIGRATION: removed during catkin migration
 # include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+
+
+include_directories(include ${catkin_INCLUDE_DIRS})
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 find_package(Eigen REQUIRED)
