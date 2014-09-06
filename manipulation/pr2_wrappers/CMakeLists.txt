@@ -73,7 +73,7 @@ src/plugs_client.cpp
 catkin_package(
     DEPENDS roscpp tf sensor_msgs visualization_msgs geometry_msgs move_base_msgs pr2_common_action_msgs pr2_controllers_msgs object_manipulator pr2_plugs_msgs
     CATKIN_DEPENDS # TODO
-    INCLUDE_DIRS # TODO include
+    INCLUDE_DIRS include # TODO include
     LIBRARIES # TODO
 )
 install(DIRECTORY include/${PROJECT_NAME}/
