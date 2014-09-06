@@ -23,7 +23,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp tf sensor_msgs visualization_msgs
 
 #generate the actions
 
-
+include_directories(include ${catkin_INCLUDE_DIRS})
 # CATKIN_MIGRATION: removed during catkin migration
 # rosbuild_init()
 
@@ -76,7 +76,7 @@ catkin_package(
     INCLUDE_DIRS include # TODO include
     LIBRARIES # TODO
 )
-install(DIRECTORY include/${PROJECT_NAME}/
+install(DIRECTORY include/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
   PATTERN ".svn" EXCLUDE
 )
